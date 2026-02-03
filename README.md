@@ -53,8 +53,8 @@ Each case study includes:
 
 Current case studies include:
 - Student Performance Analytics
-- App Funnel & Conversion Analysis
-- Payments, Risk & Fraud Analytics
+- Spotify App Funnel & Conversion Analysis
+- Payments, Risk & Fraud Analytics 
 - Travel Booking & User Segmentation
 
 ---
