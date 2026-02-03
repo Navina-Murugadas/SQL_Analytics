@@ -8,7 +8,7 @@ This repository documents my **daily SQL practice**, covering everything from fu
 
 ## 🧠 What This Repository Covers
 
-✔️ SQL fundamentals → advanced analytics  
+✔️ SQL fundamentals → Advanced analytics  
 ✔️ Interview-oriented SQL problem solving  
 ✔️ Business logic translated into SQL  
 ✔️ Clean, readable, production-style queries  
