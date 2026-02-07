@@ -1,6 +1,6 @@
 
 # ☕ Market Expansion Analysis – Monday Coffee
-<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/7cc737a2-bfca-4273-803a-c9b49e5a61b9" />
+<img width="1920" height="1080" alt="Monday_Coffee_Banner" src="https://github.com/user-attachments/assets/870f46d7-7937-4f06-a50d-3fb40306aba5" />
 
 **SQL Case Study | Business Recommendation | India**
 
