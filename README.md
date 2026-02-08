@@ -51,12 +51,6 @@ Each case study includes:
 - Multiple analytical questions
 - SQL solutions using best practices
 
-Current case studies include:
-- Student Performance Analytics
-- Spotify App Funnel & Conversion Analysis
-- Payments, Risk & Fraud Analytics 
-- Travel Booking & User Segmentation
-
 ---
 
 ## 🛠️ SQL Skills Practiced
