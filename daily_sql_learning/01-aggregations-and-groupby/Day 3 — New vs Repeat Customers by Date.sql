@@ -16,6 +16,7 @@ values(1,100,cast('2022-01-01' as date),2000),
 
 select * from customer_orders;
 
+-- Goal: Count new vs returning customers for each order date.
 WITH first_od AS(
 SELECT customer_id, MIN(order_date) AS first_order_date
 FROM customer_orders
@@ -29,4 +30,5 @@ SELECT co.order_date,
 FROM customer_orders co
 INNER JOIN first_od AS fo
 ON co.customer_id = fo.customer_id
+
 GROUP BY co.order_date;
