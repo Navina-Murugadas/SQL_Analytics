@@ -11,6 +11,7 @@ insert into emp values(8,'Ashish',5000,2);
 
 select * from emp;
 
+-- Goal: Find employees whose salary is higher than their manager's.
 SELECT e.emp_id, 
 	   e.emp_name, 
 	   m.emp_name AS manager_name, 
@@ -20,4 +21,5 @@ FROM emp e
 INNER JOIN emp m
 ON e.manager_id = m.emp_id
 WHERE e.salary > m.salary;
+
 
