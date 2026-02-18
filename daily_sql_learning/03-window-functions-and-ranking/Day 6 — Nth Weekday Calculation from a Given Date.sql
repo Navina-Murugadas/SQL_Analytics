@@ -1,3 +1,6 @@
+---------------------------------------------------------------------------------------------
+-- GOAL: Get the Nth occurrence of a weekday after a given date.
+---------------------------------------------------------------------------------------------
 /*
 Day			Number
 Sunday		1
@@ -7,19 +10,19 @@ Wednesday	4
 Thursday	5
 Friday		6
 Saturday	7
----------------------------------------------------------------------------------------------
+
 FIRST OCCURENCE OF NEXT SUNDAY:
 8 - DATEPART(WEEKDAY, @date)
 
 FIRST OCCURENCE OF NEXT SPECIFIED WEEKDAY (MON - SAT):
 Including Today --> (7 + TargetDayNumber - DATEPART(WEEKDAY, @today)) % 7 
 Excluding Today --> ((7 + TargetDayNumber - DATEPART(WEEKDAY, @today)) % 7) + 7
-*/
----------------------------------------------------------------------------------------------
 
 -- Date of nth occurrence of ANY WEEKDAY in future from given date.
 -- DATEADD(DAY, (7 + TargetDayNumber - DATEPART(WEEKDAY, @today)) % 7, @today)
-
+*/
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 -- TARGET: Nth WEDNESDAY:
 DECLARE @today DATE;
 DECLARE @n INT;
