@@ -1,3 +1,6 @@
+---------------------------------------------------------------------------------------------
+-- GOAL: Find managers who have more than 1 employee earning above 7,000.
+---------------------------------------------------------------------------------------------
 create table emp(emp_id int,emp_name varchar(10),salary int ,manager_id int);
 
 insert into emp values(1,'Ankit',10000,4);
@@ -8,7 +11,8 @@ insert into emp values(5,'Mudit',12000,6);
 insert into emp values(6,'Agam',12000,2);
 insert into emp values(7,'Sanjay',9000,2);
 insert into emp values(8,'Ashish',5000,2);
-
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 select * from emp;
 
 SELECT manager_id, COUNT(*) AS Employees_reporting
