@@ -11,6 +11,7 @@ values (1,'salary',10000), (1,'bonus',5000), (1,'hike_percent',10),
 
 select * from emp_compensation;
 
+-- Goal: Turn row-based salary components into columns, then convert them back.
 -- PIVOTING:
 SELECT emp_id,
 	CASE WHEN salary_component_type = 'salary' THEN val END AS salary,
@@ -52,4 +53,5 @@ UNION ALL
 SELECT emp_id, 'hike_percent' AS salary_component_type, hike_percent AS val
 FROM emp_compensation_pivoted
 ORDER BY emp_id;
+
 
