@@ -1,3 +1,6 @@
+---------------------------------------------------------------------------------------------
+-- GOAL: For each person, check if the sum of their friends’ scores is above 100.
+---------------------------------------------------------------------------------------------
 Create table friend (pid int, fid int);
 insert into friend (pid , fid ) values ('1','2');
 insert into friend (pid , fid ) values ('1','3');
@@ -14,7 +17,8 @@ insert into person(PersonID,Name ,Score) values('2','Bob','11');
 insert into person(PersonID,Name ,Score) values('3','Devis','27');
 insert into person(PersonID,Name ,Score) values('4','Tara','45');
 insert into person(PersonID,Name ,Score) values('5','John','63');
-
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 select * from person;
 select * from friend;
 
