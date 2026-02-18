@@ -1,3 +1,6 @@
+---------------------------------------------------------------------------------------------
+-- GOAL: Find daily cancellation rate (exclude banned users).
+---------------------------------------------------------------------------------------------
 Create table  Trips (id int, client_id int, driver_id int, city_id int, status varchar(50), request_at varchar(50));
 
 Create table Users (users_id int, banned varchar(50), role varchar(50));
@@ -22,7 +25,8 @@ insert into Users (users_id, banned, role) values ('10', 'No', 'driver');
 insert into Users (users_id, banned, role) values ('11', 'No', 'driver');
 insert into Users (users_id, banned, role) values ('12', 'No', 'driver');
 insert into Users (users_id, banned, role) values ('13', 'No', 'driver');
-
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 SELECT * FROM Trips;
 SELECT * FROM Users;
 
