@@ -1,3 +1,6 @@
+---------------------------------------------------------------------------------------------
+-- GOAL: Find matches played, won, and lost by each team.
+---------------------------------------------------------------------------------------------
 create database sql100;
 use sql100;
 
@@ -12,10 +15,10 @@ INSERT INTO icc_world_cup values('SL','Aus','Aus');
 INSERT INTO icc_world_cup values('SA','Eng','Eng');
 INSERT INTO icc_world_cup values('Eng','NZ','NZ');
 INSERT INTO icc_world_cup values('Aus','India','India');
-
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 select * from icc_world_cup;
 
--- Goal: Find matches played, won, and lost by each team.
 SELECT team_name, 
 	COUNT(1) AS no_of_matches_played, 
 	SUM(win) AS no_of_matches_won, 
@@ -33,4 +36,3 @@ FROM icc_world_cup
 ) t
 GROUP BY team_name
 ORDER BY no_of_matches_won DESC;
-
