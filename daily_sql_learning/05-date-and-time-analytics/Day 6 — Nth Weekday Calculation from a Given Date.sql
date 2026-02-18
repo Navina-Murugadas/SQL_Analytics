@@ -20,6 +20,7 @@ Excluding Today --> ((7 + TargetDayNumber - DATEPART(WEEKDAY, @today)) % 7) + 7
 -- Date of nth occurrence of ANY WEEKDAY in future from given date.
 -- DATEADD(DAY, (7 + TargetDayNumber - DATEPART(WEEKDAY, @today)) % 7, @today)
 
+-- Goal: Get the Nth occurrence of a weekday after a given date.
 -- TARGET: Nth WEDNESDAY:
 DECLARE @today DATE;
 DECLARE @n INT;
@@ -35,3 +36,4 @@ SELECT DATEADD(DAY, (7 + 4 - DATEPART(WEEKDAY, @today)) % 7, @today) AS Next_occ
 -- 3rd occurence of the next WEDNESDAY:
 DECLARE @first_occ DATE = DATEADD(DAY, (7 + 4 - DATEPART(WEEKDAY, @today)) % 7, @today);
 SELECT DATEADD(WEEK, @n-1, @first_occ) AS Nth_Occurence;
+
