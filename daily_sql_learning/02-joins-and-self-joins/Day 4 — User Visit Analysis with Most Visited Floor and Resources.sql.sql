@@ -1,3 +1,6 @@
+---------------------------------------------------------------------------------------------
+-- GOAL: For each person: most-visited floor, total visits, and unique resources used.
+---------------------------------------------------------------------------------------------
 create table entries ( 
 name varchar(20),
 address varchar(20),
@@ -12,10 +15,10 @@ values ('A','Bangalore','A@gmail.com',1,'CPU'),
 	   ('B','Bangalore','B@gmail.com',2,'DESKTOP'),
 	   ('B','Bangalore','B1@gmail.com',2,'DESKTOP'),
 	   ('B','Bangalore','B2@gmail.com',1,'MONITOR');
-
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 select * from entries;
 
--- Goal: For each person: most-visited floor, total visits, and unique resources used.
 SELECT name, floor, COUNT(1) as no_of_times_visited
 FROM entries
 GROUP BY name, floor;
