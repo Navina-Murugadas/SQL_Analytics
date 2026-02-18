@@ -44,8 +44,8 @@ INNER JOIN Users ub
 WHERE ua.banned = 'No' AND ub.banned = 'No'
 	AND request_at BETWEEN '2013-10-01' AND '2013-10-03'
 GROUP BY request_at;
-------------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------------
 WITH Trip_users AS (
 SELECT request_at AS Day, 
 	CASE WHEN status IN ('cancelled_by_client', 'cancelled_by_driver')
